@@ -1,0 +1,87 @@
+
+danchess v25.2
+
+machine has 16 processors
+
+White(1): xboard
+
+tellicsnoalias set 1 danchess v25.2 (1 cpus)
+tellicsnoalias kibitz Hello from danchess v25.2! (1 cpus)
+White(1): protover 2
+feature ping=1 setboard=1 san=1 time=1 draw=1
+feature sigint=0 sigterm=0 reuse=0 analyze=1
+feature myname="danchess-25.2" name=1
+feature playother=1 colors=0 memory=1
+feature smp=1
+feature variants="normal,nocastle"
+feature done=1
+White(1): memory 68
+Warning--  xboard 'memory' option disabled
+hash table memory = 64M bytes (4M entries).
+Warning--  xboard 'memory' option disabled
+pawn hash table memory = 3M bytes (128K entries).
+White(1): cores 1
+Warning--  xboard 'cores' option disabled
+ERROR - max threads can be set to zero (0) to disable parallel search, otherwise it must be > 1.
+parallel threads disabled.
+White(1): new
+NOTICE:  new command not implemented, please exit and
+restart danchess to re-initialize everything for a new game
+White(1): random
+White(1): level 80 3 0
+80 moves/180 seconds primary time control
+80 moves/180 seconds secondary time control
+White(1): post
+White(1): hard
+pondering enabled.
+White(1): ping 2
+pong 2
+White(1): force
+White(1): e4
+Black(1): e5
+White(2): Nf3
+Black(2): Nf6
+White(3): d4
+Black(3): Nxe4
+White(4): Bg5
+Black(4): Nxg5
+White(5): Nxg5
+Black(5): Qxg5
+White(6): Nc3
+Black(6): Bb4
+White(7): a3
+Black(7): Bxc3+
+White(8): bxc3
+Black(8): exd4
+White(9): cxd4
+Black(9): O-O
+White(10): Bc4
+Black(10): d5
+White(11): O-O
+Black(11): dxc4
+White(12): g4
+Black(12): Bxg4
+White(13): f4
+Black(13): Qg6
+White(14): h3
+Black(14): Bxh3+
+White(15): Kh2
+Black(15): Qg2#
+White(16): accepted ping
+White(16): accepted setboard
+White(16): accepted san
+White(16): accepted time
+White(16): accepted draw
+White(16): accepted sigint
+White(16): accepted sigterm
+White(16): accepted reuse
+White(16): accepted analyze
+White(16): accepted myname
+White(16): accepted name
+White(16): accepted playother
+White(16): accepted colors
+White(16): accepted memory
+White(16): accepted smp
+White(16): accepted variants
+White(16): accepted done
+White(16): quit

@@ -1,0 +1,44 @@
+.text-align-center {
+    text-align: center;
+}
+
+.highlight-white 
+{
+    box-shadow: inset 0 0 3px 3px rgb(238, 205, 61);
+}
+
+.highlight-black 
+{
+    box-shadow: inset 0 0 3px 3px rgb(74, 134, 190);
+}
+
+.board-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.status-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.input-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.advantage-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flip-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1ch;
+}

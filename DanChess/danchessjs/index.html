@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dan's Chess AI</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Necessary Javascript Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"> </script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chess.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/evaluate.js"></script>
+  </head>
+
+  <!-- BODY -->
+  <body style="background-color: rgb(68, 68, 68);">
+    <div class ="advantage-container">
+        <p><span id="advantageColor">Neither side</span> has the advantage (+<span id="advantageNumber">0</span>).</p>
+    </div>
+    <div class = "status-container">
+        <div id="status"></div>
+    </div>
+    <div class = "board-container">
+        <div id="myBoard" style="width: 500px"></div>
+        <button id="undoBtn" style="background-color: #b58863;border: 0ch;">Undo</button>
+    </div>
+    <div class = "input-container">
+        <label for="game FEN" style="margin-right: 1ch;">Game FEN to load: </label>
+        <input type="text" id="game FEN" name="game FEN" style="background-color: #b58863;border: 0ch;margin-right: 1ch;">
+        <button id="loadFEN" style="background-color: #b58863;border: 0ch;">Load FEN</button>
+    </div>
+    <div class = "flip-container">
+        <button id = "flipBoard" style="background-color: #b58863;border: 0ch;">flip board</button>
+    </div>
+    <script src='js/main.js'></script>
+  </body>
+</html>
