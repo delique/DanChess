@@ -1,0 +1,314 @@
+
+danchess v25.2
+
+machine has 16 processors
+
+White(1): xboard
+
+tellicsnoalias set 1 danchess v25.2 (1 cpus)
+tellicsnoalias kibitz Hello from danchess v25.2! (1 cpus)
+White(1): protover 2
+feature ping=1 setboard=1 san=1 time=1 draw=1
+feature sigint=0 sigterm=0 reuse=0 analyze=1
+feature myname="danchess-25.2" name=1
+feature playother=1 colors=0 memory=1
+feature smp=1
+feature variants="normal,nocastle"
+feature done=1
+White(1): accepted ping
+White(1): accepted setboard
+White(1): accepted san
+White(1): accepted time
+White(1): accepted draw
+White(1): accepted sigint
+White(1): accepted sigterm
+White(1): accepted reuse
+White(1): accepted analyze
+White(1): accepted myname
+White(1): accepted name
+White(1): accepted playother
+White(1): accepted colors
+White(1): accepted memory
+White(1): accepted smp
+White(1): accepted variants
+White(1): accepted done
+White(1): memory 68
+Warning--  xboard 'memory' option disabled
+hash table memory = 64M bytes (4M entries).
+Warning--  xboard 'memory' option disabled
+pawn hash table memory = 3M bytes (128K entries).
+White(1): cores 1
+Warning--  xboard 'cores' option disabled
+ERROR - max threads can be set to zero (0) to disable parallel search, otherwise it must be > 1.
+parallel threads disabled.
+White(1): new
+NOTICE:  new command not implemented, please exit and
+restart danchess to re-initialize everything for a new game
+White(1): random
+White(1): level 0 10 10
+ game/600 seconds primary time control
+increment 10 seconds.
+White(1): post
+White(1): hard
+pondering enabled.
+White(1): ping 1
+pong 1
+White(1): name danie
+danchess 25.2 vs danie
+White(1): time 60000
+time remaining:  10:00 (danchess).
+White(1): otim 61000
+time remaining:  10:10 (opponent).
+White(1): e4
+              time used:   2.11
+               book moves {e6, c5, e5, c6}
+               book   0.0s     26%    e5 Nf3
+Black(1): e5
+              time used:   0.00
+
+       +---+---+---+---+---+---+---+---+
+    8  |<R>|<N>|<B>|<Q>|<K>|<B>|<N>|<R>|
+       +---+---+---+---+---+---+---+---+
+    7  |<P>|<P>|<P>|<P>| . |<P>|<P>|<P>|
+       +---+---+---+---+---+---+---+---+
+    6  |   | . |   | . |   | . |   | . |
+       +---+---+---+---+---+---+---+---+
+    5  | . |   | . |   |<P>|   | . |   |
+       +---+---+---+---+---+---+---+---+
+    4  |   | . |   | . |-P-| . |   | . |
+       +---+---+---+---+---+---+---+---+
+    3  | . |   | . |   | . |   | . |   |
+       +---+---+---+---+---+---+---+---+
+    2  |-P-|-P-|-P-|-P-|   |-P-|-P-|-P-|
+       +---+---+---+---+---+---+---+---+
+    1  |-R-|-N-|-B-|-Q-|-K-|-B-|-N-|-R-|
+       +---+---+---+---+---+---+---+---+
+         a   b   c   d   e   f   g   h
+
+note: scores are for the white side
+                        +-----------white----------+-----------black----------+
+material.......   0.05  |    comp     mg      eg   |    comp     mg      eg   |
+pawns..........   0.00  |   -0.58   -0.58    0.39  |    0.58    0.58   -0.39  |
+passed pawns...   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+knights........   0.00  |   -0.58   -0.58   -0.58  |    0.58    0.58    0.58  |
+bishops........   0.00  |    0.02    0.02    0.20  |   -0.02   -0.02   -0.20  |
+rooks..........   0.00  |   -0.38   -0.38   -0.38  |    0.38    0.38    0.38  |
+queens.........   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+kings..........   0.00  |   -0.45   -0.45   -0.40  |    0.45    0.45    0.40  |
+pawn races.....   0.00  +--------------------------+--------------------------+
+total..........   0.05
+White(2): Nf3 [pondering]
+               book moves {Nf6, Nc6}
+               book   0.0s     86%    Nc6 Bb5
+White(2): time 60988
+time remaining:  10:09 (danchess).
+White(2): otim 61394
+time remaining:  10:13 (opponent).
+White(2): Nf3
+              time used:   6.17
+Black(2): Nc6
+              time used:   0.00
+
+       +---+---+---+---+---+---+---+---+
+    8  |<R>| . |<B>|<Q>|<K>|<B>|<N>|<R>|
+       +---+---+---+---+---+---+---+---+
+    7  |<P>|<P>|<P>|<P>| . |<P>|<P>|<P>|
+       +---+---+---+---+---+---+---+---+
+    6  |   | . |<N>| . |   | . |   | . |
+       +---+---+---+---+---+---+---+---+
+    5  | . |   | . |   |<P>|   | . |   |
+       +---+---+---+---+---+---+---+---+
+    4  |   | . |   | . |-P-| . |   | . |
+       +---+---+---+---+---+---+---+---+
+    3  | . |   | . |   | . |-N-| . |   |
+       +---+---+---+---+---+---+---+---+
+    2  |-P-|-P-|-P-|-P-|   |-P-|-P-|-P-|
+       +---+---+---+---+---+---+---+---+
+    1  |-R-|-N-|-B-|-Q-|-K-|-B-| . |-R-|
+       +---+---+---+---+---+---+---+---+
+         a   b   c   d   e   f   g   h
+
+note: scores are for the white side
+                        +-----------white----------+-----------black----------+
+material.......   0.05  |    comp     mg      eg   |    comp     mg      eg   |
+pawns..........   0.00  |   -0.58   -0.58    0.39  |    0.58    0.58   -0.39  |
+passed pawns...   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+knights........   0.00  |   -0.10   -0.10   -0.10  |    0.10    0.10    0.10  |
+bishops........   0.00  |    0.02    0.02    0.20  |   -0.02   -0.02   -0.20  |
+rooks..........   0.00  |   -0.28   -0.28   -0.28  |    0.28    0.28    0.28  |
+queens.........   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+kings..........   0.00  |   -0.45   -0.45   -0.40  |    0.45    0.45    0.40  |
+pawn races.....   0.00  +--------------------------+--------------------------+
+total..........   0.05
+White(3): Bb5 [pondering]
+               book moves {Nf6, a6}
+               book   0.0s     75%    a6 Ba4
+White(3): time 61974
+time remaining:  10:19 (danchess).
+White(3): otim 62256
+time remaining:  10:22 (opponent).
+White(3): c3
+              time used:   1.51
+               book moves {Nf6, d5, f5}
+               book   0.0s     58%    Nf6 d4
+Black(3): Nf6
+              time used:   0.00
+
+       +---+---+---+---+---+---+---+---+
+    8  |<R>| . |<B>|<Q>|<K>|<B>|   |<R>|
+       +---+---+---+---+---+---+---+---+
+    7  |<P>|<P>|<P>|<P>| . |<P>|<P>|<P>|
+       +---+---+---+---+---+---+---+---+
+    6  |   | . |<N>| . |   |<N>|   | . |
+       +---+---+---+---+---+---+---+---+
+    5  | . |   | . |   |<P>|   | . |   |
+       +---+---+---+---+---+---+---+---+
+    4  |   | . |   | . |-P-| . |   | . |
+       +---+---+---+---+---+---+---+---+
+    3  | . |   |-P-|   | . |-N-| . |   |
+       +---+---+---+---+---+---+---+---+
+    2  |-P-|-P-|   |-P-|   |-P-|-P-|-P-|
+       +---+---+---+---+---+---+---+---+
+    1  |-R-|-N-|-B-|-Q-|-K-|-B-| . |-R-|
+       +---+---+---+---+---+---+---+---+
+         a   b   c   d   e   f   g   h
+
+note: scores are for the white side
+                        +-----------white----------+-----------black----------+
+material.......   0.05  |    comp     mg      eg   |    comp     mg      eg   |
+pawns..........   0.10  |   -0.48   -0.48    0.43  |    0.58    0.58   -0.39  |
+passed pawns...   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+knights........  -0.48  |   -0.10   -0.10   -0.10  |   -0.38   -0.38   -0.38  |
+bishops........   0.00  |    0.02    0.02    0.20  |   -0.02   -0.02   -0.20  |
+rooks..........  -0.10  |   -0.28   -0.28   -0.28  |    0.18    0.18    0.18  |
+queens.........   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+kings..........   0.00  |   -0.45   -0.45   -0.40  |    0.45    0.45    0.40  |
+pawn races.....   0.00  +--------------------------+--------------------------+
+total..........  -0.43
+White(4): d4 [pondering]
+               book moves {Nxe4, exd4, d5, d6}
+               book   0.0s     29%    exd4 e5
+White(4): time 62962
+time remaining:  10:29 (danchess).
+White(4): otim 62802
+time remaining:  10:28 (opponent).
+White(4): d4
+              time used:   4.66
+Black(4): exd4
+              time used:   0.00
+
+       +---+---+---+---+---+---+---+---+
+    8  |<R>| . |<B>|<Q>|<K>|<B>|   |<R>|
+       +---+---+---+---+---+---+---+---+
+    7  |<P>|<P>|<P>|<P>| . |<P>|<P>|<P>|
+       +---+---+---+---+---+---+---+---+
+    6  |   | . |<N>| . |   |<N>|   | . |
+       +---+---+---+---+---+---+---+---+
+    5  | . |   | . |   | . |   | . |   |
+       +---+---+---+---+---+---+---+---+
+    4  |   | . |   |<P>|-P-| . |   | . |
+       +---+---+---+---+---+---+---+---+
+    3  | . |   |-P-|   | . |-N-| . |   |
+       +---+---+---+---+---+---+---+---+
+    2  |-P-|-P-|   | . |   |-P-|-P-|-P-|
+       +---+---+---+---+---+---+---+---+
+    1  |-R-|-N-|-B-|-Q-|-K-|-B-| . |-R-|
+       +---+---+---+---+---+---+---+---+
+         a   b   c   d   e   f   g   h
+
+note: scores are for the white side
+                        +-----------white----------+-----------black----------+
+material.......  -0.95  |    comp     mg      eg   |    comp     mg      eg   |
+pawns..........   0.13  |   -0.40   -0.40    0.47  |    0.53    0.53   -0.60  |
+passed pawns...   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+knights........  -0.48  |   -0.10   -0.10   -0.10  |   -0.38   -0.38   -0.38  |
+bishops........   0.14  |    0.16    0.16    0.34  |   -0.02   -0.02   -0.20  |
+rooks..........  -0.10  |   -0.28   -0.28   -0.28  |    0.18    0.18    0.18  |
+queens.........   0.00  |    0.00    0.00    0.00  |    0.00    0.00    0.00  |
+kings..........   0.00  |   -0.45   -0.45   -0.40  |    0.45    0.45    0.40  |
+pawn races.....   0.00  +--------------------------+--------------------------+
+total..........  -1.26
+White(5): e5 [pondering]
+               book moves {Nd5, Ne4, Qe7}
+               book   0.0s     21%    Ne4 Qe2
+White(5): time 63950
+time remaining:  10:39 (danchess).
+White(5): otim 63564
+time remaining:  10:35 (opponent).
+White(5): cxd4
+              time used:   2.50
+        time limit 50.36 (3:30)
+        depth     time       score   variation (1)
+         17     1.23/1:00    -0.74   5. ... Nxe4 6. Nbd2 Nf6 7. Bd3 Nb4 8. Nc4
+                                     Nxd3+ 9. Qxd3 Bb4+ 10. Bd2 Bxd2+ 11. Ncxd2
+                                     O-O 12. O-O Re8 13. Rfe1 d6 14. Rxe8+ Qxe8
+                                     15. Rc1 Nd5
+         17     1.28/1:10       --   5. ... Bb4+! (<-0.98)                   
+         17     1.54/1:10    -0.74   5. ... Nxe4 6. Nbd2 Nf6 7. Bd3 Nb4 8. Nc4
+                                     Nxd3+ 9. Qxd3 Bb4+ 10. Bd2 Bxd2+ 11. Ncxd2
+                                     O-O 12. O-O Re8 13. Rfe1 d6 14. Rxe8+ Qxe8
+                                     15. Rc1 Nd5
+         17->   1.59/1:10    -0.74   5. ... Nxe4 6. Nbd2 Nf6 7. Bd3 Nb4 8. Nc4
+                                     Nxd3+ 9. Qxd3 Bb4+ 10. Bd2 Bxd2+ 11. Ncxd2
+                                     O-O 12. O-O Re8 13. Rfe1 d6 14. Rxe8+ Qxe8
+                                     15. Rc1 Nd5
+         18     1.69/1:10       --   5. ... Nxe4! (<-0.90)                   
+         18     1.81/1:10    -0.95   5. ... Nxe4 6. Nbd2 Bb4 7. Bd3 d5 8. O-O
+                                     f5 9. a3 Be7 10. Qb3 Bf6 11. Re1 Bxd4
+                                     12. Nxe4 fxe4 13. Bg5 Bf6 14. Bxf6 gxf6
+         18->   1.86/1:03    -0.95   5. ... Nxe4 6. Nbd2 Bb4 7. Bd3 d5 8. O-O
+                                     f5 9. a3 Be7 10. Qb3 Bf6 11. Re1 Bxd4
+                                     12. Nxe4 fxe4 13. Bg5 Bf6 14. Bxf6 gxf6
+         19     2.76/1:03    -0.83   5. ... Nxe4 6. Nbd2 Nf6 7. Bd3 Nb4 8. Nc4
+                                     Nxd3+ 9. Qxd3 Bb4+ 10. Bd2 Bxd2+ 11. Ncxd2
+                                     Qe7+ 12. Qe3 Qxe3+ 13. fxe3 c6 14. Rc1 d5
+                                     15. O-O Be6 16. Ne5 O-O 17. Ndf3
+         19->   2.95/56.90   -0.83   5. ... Nxe4 6. Nbd2 Nf6 7. Bd3 Nb4 8. Nc4
+                                     Nxd3+ 9. Qxd3 Bb4+ 10. Bd2 Bxd2+ 11. Ncxd2
+                                     Qe7+ 12. Qe3 Qxe3+ 13. fxe3 c6 14. Rc1 d5
+                                     15. O-O Be6 16. Ne5 O-O 17. Ndf3
+         20     3.45/56.90   -0.87   5. ... Nxe4 6. Nbd2 Bb4 7. Bb5 Bxd2+
+                                     8. Bxd2 O-O 9. O-O d5 10. Rc1 Bg4 11. Bxc6
+                                     bxc6 12. Bf4 Rb8 13. b3 Bxf3 14. Qxf3 Qd7
+                                     15. Rfe1 Rfe8
+         20->   3.64/50.86   -0.87   5. ... Nxe4 6. Nbd2 Bb4 7. Bb5 Bxd2+
+                                     8. Bxd2 O-O 9. O-O d5 10. Rc1 Bg4 11. Bxc6
+                                     bxc6 12. Bf4 Rb8 13. b3 Bxf3 14. Qxf3 Qd7
+                                     15. Rfe1 Rfe8
+         21     7.94/50.86   -0.85   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 O-O 8. O-O
+                                     Nf6 9. a3 Be7 10. Re1 Re8 11. Qc2 a6
+                                     12. Bd3 g6 13. Nc4 d6 14. h3 Be6 15. Be3
+                                     Bd5 16. Ng5
+         21->   8.39/45.32   -0.85   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 O-O 8. O-O
+                                     Nf6 9. a3 Be7 10. Re1 Re8 11. Qc2 a6
+                                     12. Bd3 g6 13. Nc4 d6 14. h3 Be6 15. Be3
+                                     Bd5 16. Ng5
+         22    10.69/45.32   -0.82   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qf6
+                                     15. Qxf6 gxf6 16. Rad1 Bxa2 17. Bf4+ Be6
+                                     18. Bxc7
+         22->  11.42/40.79   -0.82   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qf6
+                                     15. Qxf6 gxf6 16. Rad1 Bxa2 17. Bf4+ Be6
+                                     18. Bxc7
+         23    13.19/40.79   -0.87   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qf6
+                                     15. Qxf6 gxf6 16. Rad1 O-O 17. Bf4 Rfe8
+         23->  13.79/36.25   -0.87   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qf6
+                                     15. Qxf6 gxf6 16. Rad1 O-O 17. Bf4 Rfe8
+         24    18.28/36.25   -0.92   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qd5
+                                     15. Qg3 O-O-O 16. Bf4 Qa5 17. Qxg7 Rhg8
+                                     18. Qxh7 Bxa2
+         24->  19.15/32.23   -0.92   5. ... Nxe4 6. Bb5 Bb4+ 7. Nbd2 a6 8. Bxc6
+                                     dxc6 9. O-O Bxd2 10. Nxd2 Nxd2 11. Re1+
+                                     Be6 12. Qxd2 Qd6 13. Qg5 Qxd4 14. Be3 Qd5
+                                     15. Qg3 O-O-O 16. Bf4 Qa5 17. Qxg7 Rhg8
+                                     18. Qxh7 Bxa2
+         25    25.72/50.36      ++   5. ... Nxe4? (>-0.76)                   

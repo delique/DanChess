@@ -33,8 +33,6 @@ let blackSquareGrey = '#696969';
 
 checkStatus('white');
 
-
-
 // function update the status message to indicate a win or draw etc
 function checkStatus(color)
 {
