@@ -29,15 +29,25 @@ stockfish.stdin.write('setoption name Hash value 512\n'); // Set hash size to 51
 
 stockfish.stdin.write('isready\n');
 
-// get the user to input the fen string
-const getFen = () => {
+// Function to get the user's color
+const getUserColor = () => {
     return new Promise((resolve) => {
-        rl.question('Enter the FEN string: ', (fen) => {
-            resolve(fen);
+        rl.question('Do you want to play as White or Black? (w/b): ', (color) => {
+            resolve(color.toLowerCase() === 'w' ? 'w' : 'b');
         });
     });
 };
 
+// Function to get the user's move
+const getUserMove = () => {
+    return new Promise((resolve) => {
+        rl.question('Enter your move (SAN): ', (move) => {
+            resolve(move);
+        });
+    });
+};
+
+// Function to evaluate moves
 const evaluateMoves = async (fen, moves) => {
     const evaluations = [];
 
@@ -117,31 +127,41 @@ const classifyMoves = (evaluations, isBlackTurn) => {
     });
 };
 
-// Main logic
-getFen().then(async (fen) => {
-    chess.load(fen); // Load the FEN string into the chess game
-    console.log(`FEN string loaded: ${fen}\n`);
-    console.log(`Current position:\n${chess.ascii()}\n`);
+const playGame = async () => {
+    const userColor = await getUserColor();
+    console.log(`You are playing as ${userColor === 'w' ? 'White' : 'Black'}.\n`);
 
-    // Get a list of possible moves for the current position
-    const moves = chess.moves({ verbose: true });
-    const moves_san = moves.map((move) => move.san); // Convert moves to SAN format
-    console.log(`Possible moves: ${moves_san.join(', ')}`);
+    while (!chess.isGameOver()) {
+        const isUserTurn = chess.turn() === userColor;
 
-    // Evaluate and classify moves
-    const evaluations = await evaluateMoves(fen, moves);
-    const isBlackTurn = chess.turn() === 'b'; // Determine if it's Black's turn
-    let classifiedMoves = classifyMoves(evaluations, isBlackTurn);
+        console.log(`It's your turn (${chess.turn() === 'w' ? 'White' : 'Black'}).`);
 
-    // Sort the moves from worst to best based on score
-    classifiedMoves = classifiedMoves.sort((a, b) => a.score - b.score);
+        if (isUserTurn) {
+            // Generate and display all moves for the user's color
+            const moves = chess.moves({ verbose: true });
+            const evaluations = await evaluateMoves(chess.fen(), moves);
+            const sortedMoves = evaluations.sort((a, b) => a.score - b.score); // Sort from worst to best
 
-    console.log('\nMove evaluations (sorted from worst to best):');
-    classifiedMoves.forEach(({ move, score, mate, classification }) => {
-        const scoreDisplay = mate || score; // Display mate (e.g., M1) if available, otherwise score
-        console.log(`${move}: ${classification} (Score: ${scoreDisplay})`);
-    });
+            console.log('\nAll moves (sorted from worst to best):');
+            sortedMoves.forEach(({ move, score, mate }, index) => {
+                const scoreDisplay = mate || score; // Display mate (e.g., M1) if available, otherwise score
+                console.log(`${index + 1}. ${move} (Score: ${scoreDisplay})`);
+            });
+        }
 
+        // Get the user's move
+        const userMove = await getUserMove();
+        if (!chess.move(userMove)) {
+            console.log('Invalid move. Try again.');
+            continue;
+        }
+
+        console.log(`\nCurrent position:\n${chess.ascii()}\n`);
+    }
+
+    console.log('Game over!');
     rl.close();
-});
+};
+
+playGame();
 
